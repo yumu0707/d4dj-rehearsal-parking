@@ -1,0 +1,898 @@
+<h3>&#8594; Lineup Suggestions for 19 EP &#8592;</h3>
+<div class="main-content">
+  <div>
+    <h4>Example</h4>
+    <hr>
+    <table>
+      <tbody>
+        <tr>
+          <th>Main Team</th>
+          <th>Slot 1</th>
+          <th>Slot 2</th>
+          <th>Slot 3</th>
+          <th>Slot 4</th>
+        </tr>
+        <tr>
+          <td class="col-header">Card</td>
+          <td><img src="../card_images/2star_N.png"></td>
+          <td><img src="../card_images/2star_S.png"></td>
+          <td><img src="../card_images/2star_S.png"></td>
+          <td><img src="../card_images/2star_B.png"></td>
+        </tr>
+        <tr>
+          <td class="col-header">Description</td>
+          <td>no match</td>
+          <td>single match [et0]</td>
+          <td>single match [et0]</td>
+          <td>both match [et0]</td>
+        </tr>
+        <tr>
+          <td class="col-header">Bonus (%)</td>
+          <td>0</td>
+          <td>20</td>
+          <td>20</td>
+          <td>50</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="call-out-box" id="ep-explanation">
+      <div class="call-out-cell">
+        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
+          <path
+            d="M297.2 248.9C311.6 228.3 320 203.2 320 176c0-70.7-57.3-128-128-128S64 105.3 64 176c0 27.2 8.4 52.3 22.8 72.9c3.7 5.3 8.1 11.3 12.8 17.7l0 0c12.9 17.7 28.3 38.9 39.8 59.8c10.4 19 15.7 38.8 18.3 57.5H109c-2.2-12-5.9-23.7-11.8-34.5c-9.9-18-22.2-34.9-34.5-51.8l0 0 0 0c-5.2-7.1-10.4-14.2-15.4-21.4C27.6 247.9 16 213.3 16 176C16 78.8 94.8 0 192 0s176 78.8 176 176c0 37.3-11.6 71.9-31.4 100.3c-5 7.2-10.2 14.3-15.4 21.4l0 0 0 0c-12.3 16.8-24.6 33.7-34.5 51.8c-5.9 10.8-9.6 22.5-11.8 34.5H226.4c2.6-18.7 7.9-38.6 18.3-57.5c11.5-20.9 26.9-42.1 39.8-59.8l0 0 0 0 0 0c4.7-6.4 9-12.4 12.7-17.7zM192 128c-26.5 0-48 21.5-48 48c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-44.2 35.8-80 80-80c8.8 0 16 7.2 16 16s-7.2 16-16 16zm0 384c-44.2 0-80-35.8-80-80V416H272v16c0 44.2-35.8 80-80 80z" />
+        </svg>
+      </div>
+      <div>
+        <ul>
+          <li>To obtain 19 EP, Team total bonus (%) range is 90 - 99.</li>
+          <li>In the above example, Team total bonus (%) = 90 </li>
+          <li>Therefore EP obtained = &#8970;10 + 90 &#247; 10&#8971; = 19</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <h4>Other Suggested Lineups</h4>
+    <hr>
+    <table>
+      <tbody>
+        <tr>
+          <th>Option</th>
+          <th>Slot 1</th>
+          <th>Slot 2</th>
+          <th>Slot 3</th>
+          <th>Slot 4</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>no match</td>
+          <td>no match</td>
+          <td>single match [et0]</td>
+          <td>both match [et4] 3★</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>single match [et0]</td>
+          <td>single match [et0]</td>
+          <td>single match [et0]</td>
+          <td>single match [et4] 3★</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h4>View All Lineups</h4>
+    <hr>
+    <p>None of above suggestions align with your card collection? Click the button below to view all possible
+      lineups.
+    </p>
+    <button onclick="loadFilter()">View All</button>
+    <button onclick="collapseTable()">Collapse All</button>
+    <div class="hide" id="all">
+      <div id="filter-group"></div>
+      <table>
+        <tbody>
+          <tr>
+            <th>Option</th>
+            <th>Slot 1</th>
+            <th>Slot 2</th>
+            <th>Slot 3</th>
+            <th>Slot 4</th>
+          </tr>
+          <tr class="row">
+            <td>1</td>
+            <td>no match</td>
+            <td>no match</td>
+            <td>single match [et0]</td>
+            <td>both match [et4] 3★ or [et2] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>2</td>
+            <td>no match</td>
+            <td>no match</td>
+            <td>single match [et1] 3★</td>
+            <td>both match [et4] 3★ or [et2] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>3</td>
+            <td>no match</td>
+            <td>no match</td>
+            <td>single match [et2] 3★</td>
+            <td>both match [et4] 3★ or [et2] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>4</td>
+            <td>no match</td>
+            <td>no match</td>
+            <td>single match [et1] 4★</td>
+            <td>both match [et4] 3★ or [et2] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>5</td>
+            <td>no match</td>
+            <td>no match</td>
+            <td>single match [et3] 3★</td>
+            <td>both match [et3] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>6</td>
+            <td>no match</td>
+            <td>no match</td>
+            <td>single match [et3] 3★</td>
+            <td>both match [et4] 3★ or [et2] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>7</td>
+            <td>no match</td>
+            <td>no match</td>
+            <td>single match [et4] 3★ or [et2] 4★</td>
+            <td>both match [et1] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>8</td>
+            <td>no match</td>
+            <td>no match</td>
+            <td>single match [et4] 3★ or [et2] 4★</td>
+            <td>both match [et3] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>9</td>
+            <td>no match</td>
+            <td>no match</td>
+            <td>single match [et3] 4★</td>
+            <td>both match [et2] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>10</td>
+            <td>no match</td>
+            <td>no match</td>
+            <td>single match [et3] 4★</td>
+            <td>both match [et1] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>11</td>
+            <td>no match</td>
+            <td>no match</td>
+            <td>single match [et3] 4★</td>
+            <td>both match [et3] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>12</td>
+            <td>no match</td>
+            <td>no match</td>
+            <td>single match [et4] 4★</td>
+            <td>single match [et4] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>13</td>
+            <td>no match</td>
+            <td>no match</td>
+            <td>single match [et4] 4★</td>
+            <td>both match [et0]</td>
+          </tr>
+          <tr class="row">
+            <td>14</td>
+            <td>no match</td>
+            <td>no match</td>
+            <td>single match [et4] 4★</td>
+            <td>both match [et1] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>15</td>
+            <td>no match</td>
+            <td>single match [et0]</td>
+            <td>single match [et0]</td>
+            <td>both match [et0]</td>
+          </tr>
+          <tr class="row">
+            <td>16</td>
+            <td>no match</td>
+            <td>single match [et0]</td>
+            <td>single match [et0]</td>
+            <td>both match [et1] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>17</td>
+            <td>no match</td>
+            <td>single match [et0]</td>
+            <td>single match [et0]</td>
+            <td>both match [et2] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>18</td>
+            <td>no match</td>
+            <td>single match [et0]</td>
+            <td>single match [et1] 3★</td>
+            <td>both match [et0]</td>
+          </tr>
+          <tr class="row">
+            <td>19</td>
+            <td>no match</td>
+            <td>single match [et0]</td>
+            <td>single match [et1] 3★</td>
+            <td>both match [et1] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>20</td>
+            <td>no match</td>
+            <td>single match [et0]</td>
+            <td>single match [et2] 3★</td>
+            <td>both match [et0]</td>
+          </tr>
+          <tr class="row">
+            <td>21</td>
+            <td>no match</td>
+            <td>single match [et0]</td>
+            <td>single match [et2] 3★</td>
+            <td>both match [et1] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>22</td>
+            <td>no match</td>
+            <td>single match [et0]</td>
+            <td>single match [et1] 4★</td>
+            <td>single match [et4] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>23</td>
+            <td>no match</td>
+            <td>single match [et0]</td>
+            <td>single match [et1] 4★</td>
+            <td>both match [et0]</td>
+          </tr>
+          <tr class="row">
+            <td>24</td>
+            <td>no match</td>
+            <td>single match [et0]</td>
+            <td>single match [et1] 4★</td>
+            <td>both match [et1] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>25</td>
+            <td>no match</td>
+            <td>single match [et0]</td>
+            <td>single match [et3] 3★</td>
+            <td>single match [et4] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>26</td>
+            <td>no match</td>
+            <td>single match [et0]</td>
+            <td>single match [et3] 3★</td>
+            <td>both match [et0]</td>
+          </tr>
+          <tr class="row">
+            <td>27</td>
+            <td>no match</td>
+            <td>single match [et0]</td>
+            <td>single match [et4] 3★ or [et2] 4★</td>
+            <td>single match [et4] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>28</td>
+            <td>no match</td>
+            <td>single match [et0]</td>
+            <td>single match [et3] 4★</td>
+            <td>single match [et3] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>29</td>
+            <td>no match</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et1] 3★</td>
+            <td>both match [et0]</td>
+          </tr>
+          <tr class="row">
+            <td>30</td>
+            <td>no match</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et1] 3★</td>
+            <td>both match [et1] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>31</td>
+            <td>no match</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et4] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>32</td>
+            <td>no match</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et2] 3★</td>
+            <td>both match [et0]</td>
+          </tr>
+          <tr class="row">
+            <td>33</td>
+            <td>no match</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et1] 4★</td>
+            <td>single match [et4] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>34</td>
+            <td>no match</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et1] 4★</td>
+            <td>both match [et0]</td>
+          </tr>
+          <tr class="row">
+            <td>35</td>
+            <td>no match</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et3] 3★</td>
+            <td>single match [et4] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>36</td>
+            <td>no match</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et3] 3★</td>
+            <td>both match [et0]</td>
+          </tr>
+          <tr class="row">
+            <td>37</td>
+            <td>no match</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et4] 3★ or [et2] 4★</td>
+            <td>single match [et4] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>38</td>
+            <td>no match</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et3] 4★</td>
+            <td>single match [et3] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>39</td>
+            <td>no match</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et4] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>40</td>
+            <td>no match</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et2] 3★</td>
+            <td>both match [et0]</td>
+          </tr>
+          <tr class="row">
+            <td>41</td>
+            <td>no match</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et1] 4★</td>
+            <td>single match [et4] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>42</td>
+            <td>no match</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et1] 4★</td>
+            <td>both match [et0]</td>
+          </tr>
+          <tr class="row">
+            <td>43</td>
+            <td>no match</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et3] 3★</td>
+            <td>single match [et4] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>44</td>
+            <td>no match</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et4] 3★ or [et2] 4★</td>
+            <td>single match [et4] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>45</td>
+            <td>no match</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et3] 4★</td>
+            <td>single match [et3] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>46</td>
+            <td>no match</td>
+            <td>single match [et1] 4★</td>
+            <td>single match [et1] 4★</td>
+            <td>single match [et4] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>47</td>
+            <td>no match</td>
+            <td>single match [et1] 4★</td>
+            <td>single match [et3] 3★</td>
+            <td>single match [et4] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>48</td>
+            <td>no match</td>
+            <td>single match [et1] 4★</td>
+            <td>single match [et4] 3★ or [et2] 4★</td>
+            <td>single match [et3] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>49</td>
+            <td>no match</td>
+            <td>single match [et1] 4★</td>
+            <td>single match [et3] 4★</td>
+            <td>single match [et3] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>50</td>
+            <td>no match</td>
+            <td>single match [et3] 3★</td>
+            <td>single match [et3] 3★</td>
+            <td>single match [et4] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>51</td>
+            <td>no match</td>
+            <td>single match [et3] 3★</td>
+            <td>single match [et4] 3★ or [et2] 4★</td>
+            <td>single match [et3] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>52</td>
+            <td>no match</td>
+            <td>single match [et3] 3★</td>
+            <td>single match [et3] 4★</td>
+            <td>single match [et3] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>53</td>
+            <td>no match</td>
+            <td>single match [et4] 3★ or [et2] 4★</td>
+            <td>single match [et4] 3★ or [et2] 4★</td>
+            <td>single match [et4] 3★ or [et2] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>54</td>
+            <td>no match</td>
+            <td>single match [et4] 3★ or [et2] 4★</td>
+            <td>single match [et4] 3★ or [et2] 4★</td>
+            <td>single match [et3] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>55</td>
+            <td>single match [et0]</td>
+            <td>single match [et0]</td>
+            <td>single match [et0]</td>
+            <td>single match [et4] 3★ or [et2] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>56</td>
+            <td>single match [et0]</td>
+            <td>single match [et0]</td>
+            <td>single match [et0]</td>
+            <td>single match [et3] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>57</td>
+            <td>single match [et0]</td>
+            <td>single match [et0]</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et4] 3★ or [et2] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>58</td>
+            <td>single match [et0]</td>
+            <td>single match [et0]</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et3] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>59</td>
+            <td>single match [et0]</td>
+            <td>single match [et0]</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et3] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>60</td>
+            <td>single match [et0]</td>
+            <td>single match [et0]</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et4] 3★ or [et2] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>61</td>
+            <td>single match [et0]</td>
+            <td>single match [et0]</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et3] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>62</td>
+            <td>single match [et0]</td>
+            <td>single match [et0]</td>
+            <td>single match [et1] 4★</td>
+            <td>single match [et1] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>63</td>
+            <td>single match [et0]</td>
+            <td>single match [et0]</td>
+            <td>single match [et1] 4★</td>
+            <td>single match [et3] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>64</td>
+            <td>single match [et0]</td>
+            <td>single match [et0]</td>
+            <td>single match [et1] 4★</td>
+            <td>single match [et4] 3★ or [et2] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>65</td>
+            <td>single match [et0]</td>
+            <td>single match [et0]</td>
+            <td>single match [et3] 3★</td>
+            <td>single match [et3] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>66</td>
+            <td>single match [et0]</td>
+            <td>single match [et0]</td>
+            <td>single match [et3] 3★</td>
+            <td>single match [et4] 3★ or [et2] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>67</td>
+            <td>single match [et0]</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et3] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>68</td>
+            <td>single match [et0]</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et4] 3★ or [et2] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>69</td>
+            <td>single match [et0]</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et3] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>70</td>
+            <td>single match [et0]</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et2] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>71</td>
+            <td>single match [et0]</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et1] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>72</td>
+            <td>single match [et0]</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et3] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>73</td>
+            <td>single match [et0]</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et4] 3★ or [et2] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>74</td>
+            <td>single match [et0]</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et1] 4★</td>
+            <td>single match [et1] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>75</td>
+            <td>single match [et0]</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et1] 4★</td>
+            <td>single match [et3] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>76</td>
+            <td>single match [et0]</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et1] 4★</td>
+            <td>single match [et4] 3★ or [et2] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>77</td>
+            <td>single match [et0]</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et3] 3★</td>
+            <td>single match [et3] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>78</td>
+            <td>single match [et0]</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et3] 3★</td>
+            <td>single match [et4] 3★ or [et2] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>79</td>
+            <td>single match [et0]</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et2] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>80</td>
+            <td>single match [et0]</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et1] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>81</td>
+            <td>single match [et0]</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et3] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>82</td>
+            <td>single match [et0]</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et4] 3★ or [et2] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>83</td>
+            <td>single match [et0]</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et1] 4★</td>
+            <td>single match [et1] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>84</td>
+            <td>single match [et0]</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et1] 4★</td>
+            <td>single match [et3] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>85</td>
+            <td>single match [et0]</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et1] 4★</td>
+            <td>single match [et4] 3★ or [et2] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>86</td>
+            <td>single match [et0]</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et3] 3★</td>
+            <td>single match [et3] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>87</td>
+            <td>single match [et0]</td>
+            <td>single match [et1] 4★</td>
+            <td>single match [et1] 4★</td>
+            <td>single match [et1] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>88</td>
+            <td>single match [et0]</td>
+            <td>single match [et1] 4★</td>
+            <td>single match [et1] 4★</td>
+            <td>single match [et3] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>89</td>
+            <td>single match [et0]</td>
+            <td>single match [et1] 4★</td>
+            <td>single match [et3] 3★</td>
+            <td>single match [et3] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>90</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et2] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>91</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et1] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>92</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et3] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>93</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et4] 3★ or [et2] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>94</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et2] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>95</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et1] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>96</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et3] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>97</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et4] 3★ or [et2] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>98</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et1] 4★</td>
+            <td>single match [et1] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>99</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et1] 4★</td>
+            <td>single match [et3] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>100</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et1] 4★</td>
+            <td>single match [et4] 3★ or [et2] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>101</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et3] 3★</td>
+            <td>single match [et3] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>102</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et2] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>103</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et1] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>104</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et3] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>105</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et1] 4★</td>
+            <td>single match [et1] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>106</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et1] 4★</td>
+            <td>single match [et3] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>107</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et1] 4★</td>
+            <td>single match [et1] 4★</td>
+            <td>single match [et1] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>108</td>
+            <td>single match [et1] 3★</td>
+            <td>single match [et1] 4★</td>
+            <td>single match [et1] 4★</td>
+            <td>single match [et3] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>109</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et2] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>110</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et1] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>111</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et3] 3★</td>
+          </tr>
+          <tr class="row">
+            <td>112</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et1] 4★</td>
+            <td>single match [et1] 4★</td>
+          </tr>
+          <tr class="row">
+            <td>113</td>
+            <td>single match [et2] 3★</td>
+            <td>single match [et1] 4★</td>
+            <td>single match [et1] 4★</td>
+            <td>single match [et1] 4★</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

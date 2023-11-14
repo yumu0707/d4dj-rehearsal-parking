@@ -1,0 +1,161 @@
+<div class="info">
+    <div>
+      <h4 class="subtitle">How to use the filter</h4>
+      <ul>
+        <li>Checking the "&#10003;" box will display results that contain the selected memeber type.</li>
+        <li>If you have multiple "&#10003;" boxes checked, only results containing <strong>ALL</strong> selected
+          member types will be displayed.
+          Please refrain from checking more than 4 of these boxes all at once.</li>
+        <li>Checking the "&#10005;" boxes will hide all results that contain the selected memeber type.</li>
+        <li>The following provide the same bonus within each pair:
+          <ul>
+            <li>Single match [et4] 3★ and Single match [et2] 4★</li>
+            <li>Both match [et4] 3★ and Both match [et2] 4★</li>
+          </ul>
+          Please refrain from checking "&#10003;" on one and "&#10005;" on the other within the pair.
+        </li>
+        <li>Please use the "Reset Filter Selection" button if you wish to uncheck any selection.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="filter-outer">
+    <div>
+      <div class="reset-button">
+        <h4 class="subtitle">Single Match Options</h4>
+        <button onclick="uncheckAll()">Reset Filter Selection</button>
+      </div>
+      <hr>
+      <table class="filter-table">
+        <thead>
+          <tr>
+            <td class="filter-table"></td>
+            <td class="filter-table">&#10003;</td>
+            <td class="filter-table">&#10005;</td>
+            <td class="filter-table"></td>
+            <td class="filter-table"></td>
+            <td class="filter-table"></td>
+            <td class="filter-table"></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="filter-table">[et0]</td>
+            <td class="filter-table"><input type="checkbox" onclick="pushTag('single match [et0]', 'inc')"></td>
+            <td class="filter-table"><input type="checkbox" onclick="pushTag('single match [et0]', 'exc')"></td>
+            <td class="filter-table"></td>
+            <td class="filter-table"></td>
+            <td class="filter-table">&#10003;</td>
+            <td class="filter-table">&#10005;</td>
+          </tr>
+          <tr>
+            <td class="filter-table">[et1] 3★</td>
+            <td class="filter-table"><input type="checkbox" onclick="pushTag('single match [et1] 3★', 'inc')"></td>
+            <td class="filter-table"><input type="checkbox" onclick="pushTag('single match [et1] 3★', 'exc')"></td>
+            <td class="filter-table"></td>
+            <td class="filter-table">[et1] 4★</td>
+            <td class="filter-table"><input type="checkbox" onclick="pushTag('single match [et1] 4★', 'inc')"></td>
+            <td class="filter-table"><input type="checkbox" onclick="pushTag('single match [et1] 4★', 'exc')"></td>
+          </tr>
+          <tr>
+            <td class="filter-table">[et2] 3★</td>
+            <td class="filter-table"><input type="checkbox" onclick="pushTag('single match [et2] 3★', 'inc')"></td>
+            <td class="filter-table"><input type="checkbox" onclick="pushTag('single match [et2] 3★', 'exc')"></td>
+            <td class="filter-table"></td>
+            <td class="filter-table">[et2] 4★</td>
+            <td class="filter-table"><input type="checkbox"
+                onclick="pushTag('single match [et4] 3★ or [et2] 4★', 'inc')"></td>
+            <td class="filter-table"><input type="checkbox"
+                onclick="pushTag('single match [et4] 3★ or [et2] 4★', 'exc')"></td>
+          </tr>
+          <tr>
+            <td class="filter-table">[et3] 3★</td>
+            <td class="filter-table"><input type="checkbox" onclick="pushTag('single match [et3] 3★', 'inc')"></td>
+            <td class="filter-table"><input type="checkbox" onclick="pushTag('single match [et3] 3★', 'exc')"></td>
+            <td class="filter-table"></td>
+            <td class="filter-table">[et3] 4★</td>
+            <td class="filter-table"><input type="checkbox" onclick="pushTag('single match [et3] 4★', 'inc')"></td>
+            <td class="filter-table"><input type="checkbox" onclick="pushTag('single match [et3] 4★', 'exc')"></td>
+          </tr>
+          <tr>
+            <td class="filter-table">[et4] 3★</td>
+            <td class="filter-table"><input type="checkbox"
+                onclick="pushTag('single match [et4] 3★ or [et2] 4★', 'inc')"></td>
+            <td class="filter-table"><input type="checkbox"
+                onclick="pushTag('single match [et4] 3★ or [et2] 4★', 'exc')"></td>
+            <td class="filter-table"></td>
+            <td class="filter-table">[et4] 4★</td>
+            <td class="filter-table"><input type="checkbox" onclick="pushTag('single match [et4] 4★', 'inc')"></td>
+            <td class="filter-table"><input type="checkbox" onclick="pushTag('single match [et4] 4★', 'exc')"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <h4 class="subtitle">Both Match Options</h4>
+      <hr>
+      <table class="filter-table">
+        <thead>
+          <tr>
+            <td class="filter-table"></td>
+            <td class="filter-table">&#10003;</td>
+            <td class="filter-table">&#10005;</td>
+            <td class="filter-table"></td>
+            <td class="filter-table"></td>
+            <td class="filter-table"></td>
+            <td class="filter-table"></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="filter-table">[et0]</td>
+            <td class="filter-table"><input type="checkbox" onclick="pushTag('both match [et0]', 'inc')"></td>
+            <td class="filter-table"><input type="checkbox" onclick="pushTag('both match [et0]', 'exc')"></td>
+            <td class="filter-table"></td>
+            <td class="filter-table"></td>
+            <td class="filter-table">&#10003;</td>
+            <td class="filter-table">&#10005;</td>
+          </tr>
+          <tr>
+            <td class="filter-table">[et1] 3★</td>
+            <td class="filter-table"><input type="checkbox" onclick="pushTag('both match [et1] 3★', 'inc')"></td>
+            <td class="filter-table"><input type="checkbox" onclick="pushTag('both match [et1] 3★', 'exc')"></td>
+            <td class="filter-table"></td>
+            <td class="filter-table">[et1] 4★</td>
+            <td class="filter-table"><input type="checkbox" onclick="pushTag('both match [et1] 4★', 'inc')"></td>
+            <td class="filter-table"><input type="checkbox" onclick="pushTag('both match [et1] 4★', 'exc')"></td>
+          </tr>
+          <tr>
+            <td class="filter-table">[et2] 3★</td>
+            <td class="filter-table"><input type="checkbox" onclick="pushTag('both match [et2] 3★', 'inc')"></td>
+            <td class="filter-table"><input type="checkbox" onclick="pushTag('both match [et2] 3★', 'exc')"></td>
+            <td class="filter-table"></td>
+            <td class="filter-table">[et2] 4★</td>
+            <td class="filter-table"><input type="checkbox"
+                onclick="pushTag('both match [et4] 3★ or [et2] 4★', 'inc')"></td>
+            <td class="filter-table"><input type="checkbox"
+                onclick="pushTag('both match [et4] 3★ or [et2] 4★', 'exc')"></td>
+          </tr>
+          <tr>
+            <td class="filter-table">[et3] 3★</td>
+            <td class="filter-table"><input type="checkbox" onclick="pushTag('both match [et3] 3★', 'inc')"></td>
+            <td class="filter-table"><input type="checkbox" onclick="pushTag('both match [et3] 3★', 'exc')"></td>
+            <td class="filter-table"></td>
+            <td class="filter-table">[et3] 4★</td>
+            <td class="filter-table"><input type="checkbox" onclick="pushTag('both match [et3] 4★', 'inc')"></td>
+            <td class="filter-table"><input type="checkbox" onclick="pushTag('both match [et3] 4★', 'exc')"></td>
+          </tr>
+          <tr>
+            <td class="filter-table">[et4] 3★</td>
+            <td class="filter-table"><input type="checkbox"
+                onclick="pushTag('both match [et4] 3★ or [et2] 4★', 'inc')"></td>
+            <td class="filter-table"><input type="checkbox"
+                onclick="pushTag('both match [et4] 3★ or [et2] 4★', 'exc')"></td>
+            <td class="filter-table"></td>
+            <td class="filter-table">[et4] 4★</td>
+            <td class="filter-table"><input type="checkbox" onclick="pushTag('both match [et4] 4★', 'inc')"></td>
+            <td class="filter-table"><input type="checkbox" onclick="pushTag('both match [et4] 4★', 'exc')"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

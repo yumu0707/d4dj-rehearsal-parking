@@ -1,0 +1,178 @@
+body {
+    font-family: "Noto Sans";
+    padding: 7vh;
+    margin: 0;
+    background-color: rgb(245, 245, 245);
+}
+
+p, h4 {
+    margin: 0;
+}
+
+h4 {
+    margin-bottom: 0.6rem;
+}
+
+p:not(:last-child) {
+    margin-bottom: 0.5em;
+}
+
+h3, #filter {
+    font-weight: 600;
+    color: rgb(113, 113, 113);
+}
+
+.search-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7vw;
+}
+
+.search-bar {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 2vh;
+}
+
+#search {
+    height: 50px;
+    font-size: 1.1rem;
+    padding: 1vh;
+}
+
+.call-out-box, .info {
+    background-color: rgb(228, 228, 228);
+    border-radius: 3px;
+}
+
+.call-out-box {   
+    padding: 1.5vh;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+}
+
+#ep-explanation {
+    margin-bottom: 0;
+}
+.call-out-cell {
+    position: relative;
+}
+
+svg {
+    height: 3.5vh;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+}
+
+li {
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+}
+
+button {
+    font-family: "Noto Sans";
+    padding: 1vh;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+table {
+    margin-bottom: 3vh;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+#all {
+    margin-top: 3vh;
+    margin-bottom: 0;
+}
+
+th, td{
+    text-align: center; 
+    padding: 1vh;
+    vertical-align: middle;
+    border: 1px solid;
+    word-break: break-word;
+}
+
+th, 
+.col-header {
+    background-color: rgb(228,228,228);
+}
+
+img {
+    width: 7vw;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+}
+
+.hide {
+    display: none;
+}
+
+.filter-options {
+    padding: 1vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-bottom: 3vh;
+}
+
+.match-category {
+    line-height: 1.5rem;
+    color: rgb(60, 60, 60);
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1.5px solid #555555;
+    background-clip: content-box;
+    padding: 3px;
+    border-radius: 0.2rem;
+    vertical-align: middle;
+  }
+  
+  input[type="checkbox"]:hover {
+    background-color: #e7e7e7;
+  }
+  
+  input[type="checkbox"]:checked {
+    background-color: #555555;
+  }
+
+  .filter-table {
+    border: none;
+  }
+
+  .filter-outer {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    padding: 3vw;
+  }
+
+  .info {
+    padding: 3vh;
+    line-height: 2em;
+  }
+
+  .subtitle {
+    color: #555555;
+  }
+
+  .reset-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
